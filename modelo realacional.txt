@@ -1,0 +1,43 @@
+create database Ventas;
+use Ventas;
+create table Personas(
+  id int,
+  Nombre varchar(100),
+  Peso int,
+  Sexo varchar(100),
+  Edad int
+  );
+  
+  insert into Personas(id,Nombre,Peso,Sexo,Edad)values(0,"Dolores",49,"M",67),
+  (1,"Fernanda",65,"M",27),
+  (2,"Jordy",85,"H",85),
+  (3,"Eloisa",62,"M",35),
+  (4,"Sergio",95,"H",18),
+  (5,"Carlos",45,"H",26);
+  
+ create table Productos(
+  id int,
+  Precio int,
+  Nombre varchar(100),
+  Cantidad int
+  );
+  
+  insert into Productos(id,Precio,Nombre,Cantidad)values(1,850,"loro",25),
+  (2,250,"Pinol",56),
+  (3,326,"Flash",89),
+  (4,648,"Trapos",96),
+  (5,485,"Trapeador",64),
+  (6,741,"Cubeta",78);
+  
+
+
+del otro lado:
+use Ventas;
+Select*from Productos;
+use Ventas;
+Select*from Personas;
+#select avg (Productos.Precio) from Productos
+#show databases;
+#show tables;
+#drop table Personas;
+#drop databases Ventas;
